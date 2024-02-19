@@ -1128,3 +1128,8 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 #copyright p a:hover {
   color: #00b4d9;
 }
+
+.galleryImgBorder {
+    border: 5px solid #00b4d9;
+    padding: 10px;
+}
