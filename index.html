@@ -28,6 +28,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    <!-- Hand Wave Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/wave.css">
 
   </head>
   <body>
@@ -115,9 +117,11 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
               <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi👋🏻, this is</h5>
+                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi<span class="wave">👋🏻</span>, this is</h5>
                 <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Nishant</h2>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">MS in Computer Science at Univeristy of Florida | Ex-Credit Suisse | Fullstack Developer</p>
+                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">| <span id="words">Fullstack Developer</span> |</p>
+                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">MS in Computer Science at Univeristy of Florida | Ex-Credit Suisse </p>
+
                 <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
                   <li>
                     <a class="facebook" href="https://www.facebook.com/nishant.routray"><i class="icon-social-facebook"></i></a>
@@ -174,13 +178,12 @@
               <img alt="" src="./assets/img/c++.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/java.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/javascript.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/html5.png" width="8%" height="8%" />
+              <img alt="" src="./assets/img/python.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/react.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/node.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/spring.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/python.png" width="8%" height="8%" />
-
               <img alt="" src="./assets/img/kafka.png" width="8%" height="8%" />
+              <img alt="" src="./assets/img/graphql.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/aws.png" width="8%" height="8%" />
               <img alt="" src="./assets/img/git.png" width="8%" height="8%" />
 
@@ -627,6 +630,17 @@
     <script src="assets/js/form-validator.min.js"></script>
     <script src="assets/js/contact-form-script.min.js"></script>
     <script src="assets/js/map.js"></script>
-      
+    <script type="text/javascript">
+      (function(){
+        var words=["Fullstack Developer","Competitive Coder","Data Engineer","Fitness Enthusiast"],
+        i=0;
+        setInterval(function(){
+          $('#words').fadeOut(function(){
+            $(this).html(words[(i=(i+1) % words.length )]).fadeIn();
+          });
+        },1500)
+      })();
+    </script>  
+
   </body>
 </html>
