@@ -1,735 +1,1101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Nishant's Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/nr.png">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05060a">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Menu CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <!-- Hand Wave Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/wave.css">
-    <!-- Hand Wave Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/project.css">
+  <title>Nishant Routray — Software Engineer II @ Microsoft</title>
+  <meta name="description"
+    content="Nishant Routray — Software Engineer II at Microsoft (Azure App Configuration &amp; Service Linker). Distributed systems, cloud platforms and Generative AI. MS in Computer Science, University of Florida.">
+  <meta name="author" content="Nishant Routray">
+  <link rel="canonical" href="https://nroutray.github.io/">
 
-  </head>
-  <body>
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Nishant Routray — Software Engineer II @ Microsoft">
+  <meta property="og:description"
+    content="Building cloud platform services on Azure App Configuration &amp; Service Linker. Distributed systems, backend engineering and Generative AI.">
+  <meta property="og:url" content="https://nroutray.github.io/">
+  <meta property="og:image" content="https://nroutray.github.io/assets/img/about/about-new2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
+  <link rel="icon" type="image/png" href="assets/img/nr.png">
+  <link rel="apple-touch-icon" href="assets/img/nr.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div style="text-align:center">
+      <div class="loader-mark">NR</div>
+      <div class="loader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== Background layers ===== -->
+  <div class="bg-layer" aria-hidden="true">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-noise" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="#home" class="brand" aria-label="Nishant Routray — home">
+        <span class="brand-mark">NR</span>
+        <span>Nishant<span class="brand-dot">.</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a class="nav-cta" href="assets/resume/Nishant_Resume.pdf" download data-magnetic>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" width="15" height="15">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        Resume
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== Mobile menu ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home"><span>01</span>Home</a>
+    <a href="#about"><span>02</span>About</a>
+    <a href="#skills"><span>03</span>Skills</a>
+    <a href="#experience"><span>04</span>Experience</a>
+    <a href="#projects"><span>05</span>Projects</a>
+    <a href="#gallery"><span>06</span>Gallery</a>
+    <a href="#contact"><span>07</span>Contact</a>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+
+        <div class="hero-copy">
+          <div class="status-pill" data-reveal data-delay="0.05">
+            <span class="status-dot"></span>
+            Software Engineer II @ Microsoft · Redmond, WA
           </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Skills
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">
-                  Experience
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#portfolios">
-                  Gallery
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
+
+          <p class="hero-hi" data-reveal data-delay="0.1">Hi there, I'm <span class="wave">👋</span></p>
+
+          <h1 class="hero-name" data-reveal data-delay="0.15">
+            Nishant <span class="grad-text">Routray</span>
+          </h1>
+
+          <p class="hero-role" data-reveal data-delay="0.2">
+            <span class="prefix">&lt;/&gt;</span>
+            <span id="typed"
+              data-words="Software Engineer II @ Microsoft|Azure App Configuration|Service Linker|Distributed Systems Engineer|Generative AI Builder|Competitive Coder"></span><span
+              class="type-caret"></span>
+          </p>
+
+          <p class="hero-bio" data-reveal data-delay="0.25">
+            I build <strong>cloud platform services</strong> that thousands of developers depend on — today on
+            <strong>Azure App Configuration</strong> and <strong>Service Linker</strong> at Microsoft. Previously
+            shipped <strong>Agentic AI</strong> systems at Motorola Solutions and regulatory-reporting microservices
+            handling <strong>1M+ trades/day</strong> at Credit Suisse.
+          </p>
+
+          <div class="hero-actions" data-reveal data-delay="0.3">
+            <a href="#contact" class="btn btn-primary" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Let's talk
+            </a>
+            <a href="assets/resume/Nishant_Resume.pdf" download class="btn btn-ghost" data-magnetic>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download résumé
+            </a>
+          </div>
+
+          <ul class="socials" data-reveal data-delay="0.35">
+            <li><a href="https://github.com/nroutray" target="_blank" rel="noopener" data-net="github"
+                aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+                </svg>
+              </a></li>
+            <li><a href="https://www.linkedin.com/in/nishant-routray-081222111" target="_blank" rel="noopener"
+                data-net="linkedin" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z" />
+                </svg>
+              </a></li>
+            <li><a href="https://leetcode.com/nroutray/" target="_blank" rel="noopener" data-net="leetcode"
+                aria-label="LeetCode">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M13.5 1.2a1.4 1.4 0 0 1 2 2l-3.3 3.4 5.4 5.5a1.4 1.4 0 0 1-2 2l-5.4-5.5-3.5 3.6a3.6 3.6 0 0 0 0 5l3.5 3.5a3.5 3.5 0 0 0 5 0l1.9-2a1.4 1.4 0 0 1 2 2l-2 2a6.4 6.4 0 0 1-9 0l-3.4-3.6a6.4 6.4 0 0 1 0-9zM21 13.4h-8.3a1.4 1.4 0 0 1 0-2.8H21a1.4 1.4 0 1 1 0 2.8z" />
+                </svg>
+              </a></li>
+            <li><a href="https://www.instagram.com/_just.nish_/" target="_blank" rel="noopener" data-net="instagram"
+                aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+                </svg>
+              </a></li>
+            <li><a href="mailto:nishant.routray@gmail.com" data-net="mail" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual" data-reveal="scale" data-delay="0.2">
+          <div class="avatar-wrap">
+            <div class="avatar-inner">
+              <img src="assets/img/about/about-new2.jpg" alt="Portrait of Nishant Routray" width="360" height="360">
+            </div>
+          </div>
+
+          <div class="float-card fc-1">
+            <img src="assets/img/microsoft.svg" alt="Microsoft">
+            <div>Microsoft<small>SDE II · Azure</small></div>
+          </div>
+
+          <div class="float-card fc-2">
+            <span class="fc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </span>
+            <div>6+ yrs<small>Building software</small></div>
+          </div>
+
+          <div class="float-card fc-3">
+            <span class="fc-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                <path d="M6 12v5c3 3 9 3 12 0v-5" />
+              </svg>
+            </span>
+            <div>MS CS<small>Univ. of Florida</small></div>
           </div>
         </div>
 
-        <!-- Mobile Menu Start -->
-        <ul class="onepage-nev mobile-menu">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#services">Skills</a>
-          </li>
-          <li>
-            <a href="#resume">Experience</a>
-          </li>
-          <li>
-            <a href="#portfolio">Gallery</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
+      </div>
+    </div>
 
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-              <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi<span class="wave">👋🏻</span>, this is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Nishant</h2>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">| <span id="words">Software Developer</span> |</p>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">MS in Computer Science at Univeristy of Florida | Ex-Credit Suisse </p>
+    <div class="scroll-cue" aria-hidden="true">
+      <span class="mouse"></span>
+      Scroll
+    </div>
+  </section>
 
-                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
-                  <li>
-                    <a class="facebook" href="https://www.facebook.com/nishant.routray"><i class="icon-social-facebook"></i></a>
-                  </li>
-                  <!-- <li>
-                    <a class="twitter" href="https://twitter.com/NR7Returns"><i class="icon-social-twitter"></i></a>
-                  </li> -->
-                  <li>
-                    <a class="instagram" href="https://www.instagram.com/_just.nish_/"><i class="icon-social-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="https://in.linkedin.com/in/nishant-routray-081222111"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                  	<a class="github" href="https://www.github.com/nroutray"><i class="icon-social-github"></i></a>
-                  </li>
-                </ul>
-                <div class="header-button wow fadeInUp" data-wow-delay="1s">
-                  <a href="assets/resume/Nishant_Resume.pdf" class="btn btn-common" download="Nishant_Resume">My Resume</a>
+  <!-- ===== Tech marquee ===== -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee" id="marquee">
+      <div class="marquee-track">
+        <div class="marquee-item"><img src="assets/img/azure.svg" alt="">Azure</div>
+        <div class="marquee-item"><img src="assets/img/c++.png" alt="">C++</div>
+        <div class="marquee-item"><img src="assets/img/java.png" alt="">Java</div>
+        <div class="marquee-item"><img src="assets/img/python.png" alt="">Python</div>
+        <div class="marquee-item"><img src="assets/img/javascript.png" alt="">JavaScript</div>
+        <div class="marquee-item"><img src="assets/img/react.png" alt="">React</div>
+        <div class="marquee-item"><img src="assets/img/node.png" alt="">Node.js</div>
+        <div class="marquee-item"><img src="assets/img/spring.png" alt="">Spring Boot</div>
+        <div class="marquee-item"><img src="assets/img/kafka.png" alt="">Kafka</div>
+        <div class="marquee-item"><img src="assets/img/graphql.png" alt="">GraphQL</div>
+        <div class="marquee-item"><img src="assets/img/langchain.png" alt="">LangChain</div>
+        <div class="marquee-item"><img src="assets/img/docker.png" alt="">Docker</div>
+        <div class="marquee-item"><img src="assets/img/aws.png" alt="">AWS</div>
+        <div class="marquee-item"><img src="assets/img/sql.png" alt="">SQL</div>
+        <div class="marquee-item"><img src="assets/img/git.png" alt="">Git</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">About me</span>
+        <h2 class="section-title">A quick <span class="grad-text">introduction</span></h2>
+        <p class="section-sub">Engineer by trade, builder by instinct — happiest when a hard systems problem meets a
+          clean, well-tested solution.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo" data-reveal="left">
+          <img src="assets/img/about/about-new.jpg" alt="Nishant Routray" loading="lazy">
+          <div class="photo-tag">
+            <b>Nishant Routray</b>
+            Redmond, Washington
+          </div>
+        </div>
+
+        <div class="about-copy" data-reveal="right">
+          <p>
+            I'm a <span class="hl">Software Engineer II at Microsoft</span>, working on
+            <strong>Azure App Configuration</strong> and <strong>Service Linker</strong> — the services that let teams
+            centralize their app settings, feature flags and service-to-service connections without shipping secrets
+            in code.
+          </p>
+          <p>
+            Before Microsoft I built <strong>Agentic AI assistants</strong> at Motorola Solutions, using Azure OpenAI
+            with RAG and prompt engineering to turn plain-English questions into SQL over AWS Redshift. Earlier, three
+            years at <strong>Credit Suisse</strong> gave me deep experience with Java, Spring Boot and Node.js
+            microservices for regulatory reporting at real scale.
+          </p>
+          <p>
+            I hold an <strong>MS in Computer Science from the University of Florida</strong>, where I focused on
+            algorithms and operating systems. Outside work, you'll find me solving problems on LeetCode, on a soccer
+            field, in the gym, or planning the next trip.
+          </p>
+
+          <div class="stats-row">
+            <div class="stat">
+              <div class="num"><span data-count="6" data-suffix="+">0</span></div>
+              <div class="lbl">Years building</div>
+            </div>
+            <div class="stat">
+              <div class="num"><span data-count="1" data-suffix="M+">0</span></div>
+              <div class="lbl">Trades / day</div>
+            </div>
+            <div class="stat">
+              <div class="num"><span data-count="3.85">0</span></div>
+              <div class="lbl">Grad GPA</div>
+            </div>
+          </div>
+
+          <ul class="info-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span><b>Based in</b> Redmond, WA · USA</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              <span><b>Focus</b> Cloud platform services, distributed systems, GenAI</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+              <span><b>Currently</b> Learning distributed consensus &amp; platform reliability at scale</span>
+            </li>
+          </ul>
+
+          <a href="mailto:nishant.routray@gmail.com" class="btn btn-primary" data-magnetic>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z" />
+            </svg>
+            Say hello
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What I do ===== -->
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">What I do</span>
+        <h2 class="section-title">Where I add the <span class="grad-text">most value</span></h2>
+      </div>
+
+      <div class="cards-3">
+        <article class="glass feature-card" data-reveal data-delay="0.05" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M18 10h-1.3A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+            </svg>
+          </div>
+          <h3>Cloud Platform Engineering</h3>
+          <p>Designing and operating multi-tenant Azure services — configuration management, feature flags and secure
+            service-to-service connections that stay fast and available under load.</p>
+          <div class="tags"><span>Azure</span><span>C#/.NET</span><span>ARM</span><span>Reliability</span></div>
+        </article>
+
+        <article class="glass feature-card" data-reveal data-delay="0.12" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <path d="M7 8l2 2-2 2M12 12h5" />
+            </svg>
+          </div>
+          <h3>Full-Stack Development</h3>
+          <p>Backends that move millions of records a day and interfaces people actually enjoy using — Spring Boot,
+            Node.js and React, wired together with Kafka, GraphQL and solid API design.</p>
+          <div class="tags"><span>Spring Boot</span><span>Node.js</span><span>React</span><span>Kafka</span></div>
+        </article>
+
+        <article class="glass feature-card" data-reveal data-delay="0.19" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 3l1.9 4.6L18.5 9.5 13.9 11.4 12 16l-1.9-4.6L5.5 9.5l4.6-1.9z" />
+              <path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z" />
+            </svg>
+          </div>
+          <h3>Generative &amp; Agentic AI</h3>
+          <p>Shipping LLM systems that do real work: RAG pipelines, few-shot prompt engineering and natural-language
+            to SQL agents that query warehouses and answer in plain English.</p>
+          <div class="tags"><span>Azure OpenAI</span><span>LangChain</span><span>RAG</span><span>NL2SQL</span></div>
+        </article>
+
+        <article class="glass feature-card" data-reveal data-delay="0.26" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+            </svg>
+          </div>
+          <h3>Algorithms &amp; Problem Solving</h3>
+          <p>Data structures and algorithms are a genuine hobby, not just interview prep. Regular on LeetCode and a
+            firm believer that the right data structure removes most of the code.</p>
+          <div class="tags"><span>DSA</span><span>C++</span><span>System Design</span></div>
+        </article>
+
+        <article class="glass feature-card" data-reveal data-delay="0.33" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
+            </svg>
+          </div>
+          <h3>Collaboration &amp; Ownership</h3>
+          <p>Taking features from ambiguous idea to production — writing the design doc, driving reviews, unblocking
+            teammates and staying accountable long after the PR merges.</p>
+          <div class="tags"><span>Design docs</span><span>Mentoring</span><span>Code review</span></div>
+        </article>
+
+        <article class="glass feature-card" data-reveal data-delay="0.4" data-tilt>
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1L12 21l7.7-7.6 1.1-1a5.5 5.5 0 0 0 0-7.8z" />
+            </svg>
+          </div>
+          <h3>Beyond the Keyboard</h3>
+          <p>Traveller, soccer player and gym regular. The best debugging ideas usually show up somewhere between the
+            trailhead and the last set.</p>
+          <div class="tags"><span>Travel</span><span>Soccer</span><span>Fitness</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Tech stack</span>
+        <h2 class="section-title">Tools I <span class="grad-text">build with</span></h2>
+        <p class="section-sub">Filter by category to see what I reach for day to day.</p>
+      </div>
+
+      <div class="skill-tabs" data-reveal>
+        <button class="skill-tab active" data-filter="all">All</button>
+        <button class="skill-tab" data-filter="lang">Languages</button>
+        <button class="skill-tab" data-filter="frame">Frameworks</button>
+        <button class="skill-tab" data-filter="cloud">Cloud &amp; DevOps</button>
+        <button class="skill-tab" data-filter="data">Data</button>
+        <button class="skill-tab" data-filter="ai">AI</button>
+      </div>
+
+      <div class="skills-grid" data-reveal>
+        <div class="skill-chip" data-cat="lang"><img src="assets/img/c++.png" alt="C++" loading="lazy"><span>C /
+            C++</span></div>
+        <div class="skill-chip" data-cat="lang"><img src="assets/img/java.png" alt="Java" loading="lazy"><span>Java</span>
+        </div>
+        <div class="skill-chip" data-cat="lang ai"><img src="assets/img/python.png" alt="Python"
+            loading="lazy"><span>Python</span></div>
+        <div class="skill-chip" data-cat="lang"><img src="assets/img/javascript.png" alt="JavaScript"
+            loading="lazy"><span>JavaScript</span></div>
+        <div class="skill-chip" data-cat="lang"><div class="fallback">C#</div><span>C# / .NET</span></div>
+        <div class="skill-chip" data-cat="lang"><div class="fallback">TS</div><span>TypeScript</span></div>
+        <div class="skill-chip" data-cat="lang"><img src="assets/img/html5.png" alt="HTML5" loading="lazy"><span>HTML &amp;
+            CSS</span></div>
+        <div class="skill-chip" data-cat="lang cloud"><img src="assets/img/shell.png" alt="Bash"
+            loading="lazy"><span>Bash</span></div>
+
+        <div class="skill-chip" data-cat="frame"><img src="assets/img/spring.png" alt="Spring Boot"
+            loading="lazy"><span>Spring Boot</span></div>
+        <div class="skill-chip" data-cat="frame"><img src="assets/img/node.png" alt="Node.js"
+            loading="lazy"><span>Node.js</span></div>
+        <div class="skill-chip" data-cat="frame"><img src="assets/img/react.png" alt="React"
+            loading="lazy"><span>React &amp; Redux</span></div>
+        <div class="skill-chip" data-cat="frame data"><img src="assets/img/graphql.png" alt="GraphQL"
+            loading="lazy"><span>GraphQL</span></div>
+        <div class="skill-chip" data-cat="frame data"><img src="assets/img/kafka.png" alt="Apache Kafka"
+            loading="lazy"><span>Apache Kafka</span></div>
+        <div class="skill-chip" data-cat="frame"><div class="fallback">API</div><span>REST APIs</span></div>
+
+        <div class="skill-chip" data-cat="cloud"><img src="assets/img/azure.svg" alt="Microsoft Azure"
+            loading="lazy"><span>Azure</span></div>
+        <div class="skill-chip" data-cat="cloud"><img src="assets/img/aws.png" alt="AWS" loading="lazy"><span>AWS</span>
+        </div>
+        <div class="skill-chip" data-cat="cloud"><img src="assets/img/docker.png" alt="Docker"
+            loading="lazy"><span>Docker</span></div>
+        <div class="skill-chip" data-cat="cloud"><div class="fallback">K8s</div><span>Kubernetes</span></div>
+        <div class="skill-chip" data-cat="cloud"><img src="assets/img/git.png" alt="Git" loading="lazy"><span>Git &amp;
+            CI/CD</span></div>
+
+        <div class="skill-chip" data-cat="data"><img src="assets/img/sql.png" alt="SQL" loading="lazy"><span>SQL</span>
+        </div>
+        <div class="skill-chip" data-cat="data"><div class="fallback">PG</div><span>PostgreSQL</span></div>
+        <div class="skill-chip" data-cat="data"><div class="fallback">RS</div><span>Redshift</span></div>
+
+        <div class="skill-chip" data-cat="ai"><img src="assets/img/langchain.png" alt="LangChain"
+            loading="lazy"><span>LangChain</span></div>
+        <div class="skill-chip" data-cat="ai"><div class="fallback">AI</div><span>Azure OpenAI</span></div>
+        <div class="skill-chip" data-cat="ai"><div class="fallback">RAG</div><span>RAG Pipelines</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience & Education ===== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">The journey</span>
+        <h2 class="section-title">Experience &amp; <span class="grad-text">education</span></h2>
+      </div>
+
+      <div class="switch-wrap" data-reveal>
+        <div class="tl-switch" role="tablist">
+          <button class="active" data-pane="pane-work" role="tab" aria-selected="true">Experience</button>
+          <button data-pane="pane-edu" role="tab" aria-selected="false">Education</button>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="pane active" id="pane-work">
+        <div class="timeline">
+
+          <div class="tl-item" data-reveal data-delay="0.05">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/microsoft.svg" alt="Microsoft"></span>
+                <div>
+                  <h3 class="tl-role">Software Engineer II</h3>
+                  <div class="tl-org">Microsoft · Azure App Configuration &amp; Service Linker</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>Dec 2025 — Present
+                    </span>
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>Redmond, WA
+                    </span>
+                  </div>
+                </div>
+                <span class="tl-badge">Current</span>
+              </div>
+              <ul class="tl-points">
+                <li><b>Building</b> and operating Azure App Configuration — the managed service teams use to centralize
+                  application settings and feature flags across environments.</li>
+                <li><b>Developing</b> Service Linker, which automates secure, credential-free connections between Azure
+                  compute services and backing resources.</li>
+                <li><b>Owning</b> features end to end across design, implementation, code review, deployment and live-site
+                  reliability for a multi-tenant cloud platform.</li>
+              </ul>
+              <div class="tl-stack"><span>Azure</span><span>C# / .NET</span><span>Distributed Systems</span><span>Cloud
+                  Platform</span><span>Live Site</span></div>
+            </div>
+          </div>
+
+          <div class="tl-item" data-reveal data-delay="0.1">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/motorola.png" alt="Motorola Solutions"></span>
+                <div>
+                  <h3 class="tl-role">Software Developer — Agentic AI</h3>
+                  <div class="tl-org">Motorola Solutions · Enterprise Core Tech</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>May 2024 — Dec 2025
+                    </span>
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>Chicago, IL
+                    </span>
+                  </div>
                 </div>
               </div>
+              <ul class="tl-points">
+                <li><b>Developed</b> Agentic AI assistants with Azure OpenAI that convert natural-language questions
+                  into SQL and perform document analysis for the Enterprise Core Tech team.</li>
+                <li><b>Employed</b> prompt engineering and few-shot learning with RAG to push query-translation accuracy
+                  on real production schemas.</li>
+                <li><b>Executed</b> generated queries against AWS Redshift and transformed the results back into plain
+                  English answers through the LLM.</li>
+              </ul>
+              <div class="tl-stack"><span>Azure OpenAI</span><span>LangChain</span><span>Python</span><span>RAG</span><span>AWS
+                  Redshift</span></div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Hero Area End -->
 
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-new.jpg" alt="">
-            </div>
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <p>Greetings!<br>
-                I'm a software engineer working at Motorola Solutions with a Master's in Computer Science at the University of Florida, Gainesville. During my recent work, I developed a Agentic AI assistant using AzureOpenAI's ChatGPT-4o, converting natural language queries into SQL and integrating with AWS Redshift.
-                I have three years of experience at Credit Suisse in India, specializing in Java, Spring Boot, Node.js, and Express for microservices in regulatory reporting. I also excel in creating user interfaces with React and Redux for real-time trade monitoring.
-                Eager to tackle new challenges and contribute to innovative projects, I'm looking for opportunities to leverage my skills and grow professionally.<br>
-                
-                Let's collaborate and create something exceptional!</p>
-              <!-- <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Nishant Routray</span></li>
-                </ul>
-              </div> -->
-              <img alt="" src="./assets/img/c++.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/java.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/javascript.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/python.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/react.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/node.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/spring.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/kafka.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/graphql.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/aws.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/langchain.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/sql.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/docker.png" width="8%" height="8%" />
-              <img alt="" src="./assets/img/git.png" width="8%" height="8%" />
-
-              <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><b>Languages:</b> C/C++, Python, Java, JavaScript, HTML/CSS, Bash</li>
-                  <li><b>Databases:</b> MySQL, PostgreSQL, Sybase</li>
-                  <li><b>Frameworks:</b> Langchain, Node.js, Express, Spring Boot, Apache Kafka, React, Redux</li>
-                  <li><b>Tools & Technologies:</b> Git, Docker, AWS, JIRA</li>
-                </ul>
+          <div class="tl-item" data-reveal data-delay="0.15">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/csLogo.png" alt="Credit Suisse"></span>
+                <div>
+                  <h3 class="tl-role">Software Developer</h3>
+                  <div class="tl-org">Credit Suisse · Regulatory Reporting</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>Aug 2020 — Jul 2023
+                    </span>
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>Pune, India
+                    </span>
+                  </div>
+                </div>
               </div>
-              <a href="mailto:nishant.routray@gmail.com" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+              <ul class="tl-points">
+                <li><b>Developed</b> Spring Boot microservices for regulatory reporting, handling 1M+ trades per day to
+                  downstream regulators such as DTCC.</li>
+                <li><b>Created</b> a React-based UI for real-time trade monitoring with advanced search and filtering
+                  across the full trade lifecycle.</li>
+                <li><b>Optimized</b> database growth by designing an archival component, saving roughly 100K CHF
+                  annually.</li>
+                <li><b>Delivered</b> a Node.js, Express and React live web app for process scheduling and control.</li>
+              </ul>
+              <div class="tl-stack"><span>Java</span><span>Spring Boot</span><span>React</span><span>Redux</span><span>Node.js</span><span>Sybase</span>
+              </div>
             </div>
-          </div>   
+          </div>
+
+          <div class="tl-item" data-reveal data-delay="0.2">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/iitLogo.png" alt="IIT Kharagpur"></span>
+                <div>
+                  <h3 class="tl-role">C++ Research Intern</h3>
+                  <div class="tl-org">IIT Kharagpur</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>May 2019 — Jul 2019
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <ul class="tl-points">
+                <li><b>Researched</b> a novel architecture for Underwater Multimedia Acoustic Sensor Networks,
+                  minimizing latency and energy consumption.</li>
+                <li><b>Optimized</b> cross-layer routing algorithms to improve communication efficiency between sea
+                  nodes.</li>
+              </ul>
+              <div class="tl-stack"><span>C++</span><span>Networking</span><span>Research</span></div>
+            </div>
+          </div>
+
         </div>
       </div>
-    </section>
-    <!-- About Section End -->
 
-  <!-- Services Section Start -->
-  <section id="services" class="services section-padding">
-    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Bit More About Me !!! 👨‍💻</h2>
+      <!-- Education -->
+      <div class="pane" id="pane-edu">
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/ufLogo.png" alt="University of Florida"></span>
+                <div>
+                  <h3 class="tl-role">M.S. in Computer Science</h3>
+                  <div class="tl-org">University of Florida · Gainesville, FL</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>Aug 2023 — May 2025
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <ul class="tl-points">
+                <li>Specialized in <b>advanced data structures</b>, algorithms, operating systems and distributed
+                  computing.</li>
+                <li>Built projects spanning applied ML, data engineering and systems programming.</li>
+              </ul>
+              <span class="tl-gpa">GPA 3.85 / 4.00</span>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="glass tl-card">
+              <div class="tl-top">
+                <span class="tl-logo"><img src="assets/img/vssutLogo.png" alt="VSSUT Burla"></span>
+                <div>
+                  <h3 class="tl-role">B.Tech. in Computer Science</h3>
+                  <div class="tl-org">VSSUT, Burla · Odisha, India</div>
+                  <div class="tl-meta">
+                    <span>
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" />
+                        <path d="M16 2v4M8 2v4M3 10h18" />
+                      </svg>Jul 2016 — Jul 2020
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <ul class="tl-points">
+                <li>Grounded in <b>core CS fundamentals</b> — algorithms, networks, databases and software engineering.
+                </li>
+                <li>Led development-focused coursework and projects with an emphasis on clean coding practices.</li>
+              </ul>
+              <span class="tl-gpa">GPA 3.62 / 4.00</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section">
     <div class="container">
-      <div class="row">
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-            <div class="icon">
-              <i class="icon-grid"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Fullstack</a></h3>
-              <p>
-                Crafting robust applications to effortlessly manage vast data streams, while sculpting user interfaces that turn interactions into a smooth and intuitive experience. Embracing full-stack development, I seamlessly integrate backend and frontend elements for a holistic digital journey.</p>
-            </div>
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Selected work</span>
+        <h2 class="section-title">Things I've <span class="grad-text">built</span></h2>
+        <p class="section-sub">A few side projects and coursework builds — all open source on GitHub.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="glass project-card" data-reveal data-delay="0.05" data-tilt>
+          <div class="pc-head">
+            <span class="pc-icon"><img src="assets/img/langchain.png" alt="" loading="lazy"></span>
+            <a class="pc-link" href="https://github.com/nroutray/JARGO" target="_blank" rel="noopener"
+              aria-label="JARGO on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+          <h3>JARGO</h3>
+          <p>A GenAI tech-jargon translator that sits in your chat space and automatically rewrites dense, acronym-heavy
+            messages into clear, human sentences.</p>
+          <div class="pc-tags"><span>LangChain</span><span>LLM</span><span>Python</span></div>
+        </article>
+
+        <article class="glass project-card" data-reveal data-delay="0.12" data-tilt>
+          <div class="pc-head">
+            <span class="pc-icon"><img src="assets/img/python.png" alt="" loading="lazy"></span>
+            <a class="pc-link" href="https://github.com/nroutray/cis6930sp24-assignment0" target="_blank"
+              rel="noopener" aria-label="Data Redaction Pipeline on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+          <h3>Data Redaction Pipeline</h3>
+          <p>Automatically detects and conceals personally identifiable information in public-safety incident records so
+            the data stays usable for analysis without exposing individuals.</p>
+          <div class="pc-tags"><span>Python</span><span>NLP</span><span>Data Privacy</span></div>
+        </article>
+
+        <article class="glass project-card" data-reveal data-delay="0.19" data-tilt>
+          <div class="pc-head">
+            <span class="pc-icon"><img src="assets/img/java.png" alt="" loading="lazy"></span>
+            <a class="pc-link" href="https://github.com/nroutray/gatorLibrary_ADS" target="_blank" rel="noopener"
+              aria-label="Gator Library on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+          <h3>Gator Library Management</h3>
+          <p>A book-records management system built from scratch on a Red-Black tree for O(log n) lookups and a binary
+            min-heap for fair, priority-based reservation queues.</p>
+          <div class="pc-tags"><span>Java</span><span>Red-Black Tree</span><span>Min Heap</span></div>
+        </article>
+
+        <article class="glass project-card" data-reveal data-delay="0.26" data-tilt>
+          <div class="pc-head">
+            <span class="pc-icon"><img src="assets/img/python.png" alt="" loading="lazy"></span>
+            <a class="pc-link" href="https://github.com/nroutray/Jumbo" target="_blank" rel="noopener"
+              aria-label="Jumbo on GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7" />
+                <polyline points="7 7 17 7 17 17" />
+              </svg>
+            </a>
+          </div>
+          <h3>Jumbo — Human-Elephant Strife</h3>
+          <p>A YOLO object-detection model that spots elephants approaching farmland and triggers a deterrent buzzer,
+            reducing dangerous human-wildlife encounters.</p>
+          <div class="pc-tags"><span>YOLO</span><span>Computer Vision</span><span>Python</span></div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;margin-top:44px" data-reveal>
+        <a href="https://github.com/nroutray?tab=repositories" target="_blank" rel="noopener" class="btn btn-ghost"
+          data-magnetic>
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+          </svg>
+          See all repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Off the clock</span>
+        <h2 class="section-title">Some beautiful <span class="grad-text">memories</span></h2>
+        <p class="section-sub">Click any photo to open it full size.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gal-item" data-reveal data-delay="0.05" tabindex="0" role="button"
+          aria-label="Open photo 1">
+          <img src="assets/img/gallery/img-3.jpg" alt="Memory 1" loading="lazy">
+          <div class="gal-overlay">
+            <span class="eye">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
           </div>
         </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-            <div class="icon">
-              <i class="icon-layers"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Competitive Coding</a></h3>
-              <p>I'm really into DSA and always practicing to learn more and more because I love it! <br> <a href="https://leetcode.com/nroutray/"><img alt="" src="./assets/img/leetcode.png" width="20%" height="20%" />Leetcode</a></p>
-            </div>
+
+        <div class="gal-item" data-reveal data-delay="0.12" tabindex="0" role="button"
+          aria-label="Open photo 2">
+          <img src="assets/img/gallery/img-2.png" alt="Memory 2" loading="lazy">
+          <div class="gal-overlay">
+            <span class="eye">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
           </div>
         </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-            <div class="icon">
-              <i class="icon-briefcase"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Leadership</a></h3>
-              <p>Eagerly anticipating fresh challenges to fuel personal growth while fostering an environment where others flourish alongside me.</p>
-            </div>
-          </div>
-        </div>
-        <!-- Services item -->
-        <div class="col-md-6 col-lg-3 col-xs-12">
-          <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
-            <div class="icon">
-              <i class="icon-bubbles"></i>
-            </div>
-            <div class="services-content">
-              <h3><a href="#">Hobbies</a></h3>
-              <p>Fueled by an unwavering passion for adventure and a deep love for nature, I'm an avid traveler always seeking new experiences. Off the road, you'll often find me on the soccer field or in the gym, embracing my love for the game and commitment to health and fitness.</p>
-            </div>
+
+        <div class="gal-item" data-reveal data-delay="0.19" tabindex="0" role="button"
+          aria-label="Open photo 3">
+          <img src="assets/img/gallery/img-1.jpg" alt="Memory 3" loading="lazy">
+          <div class="gal-overlay">
+            <span class="eye">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                <circle cx="12" cy="12" r="3" />
+              </svg>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- Services Section End -->
 
-    <!-- Resume Section Start -->
-    <div id="resume" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="education wow fadeInRight" data-wow-delay="0.3s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-graduation"></i>
-                  <h2 class="timelin-title">Education</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <img alt="" src="./assets/img/ufLogo.png" class="responsive-img" width="15%" height="15%"/><br /> <br/>   
-                    <h3 class="line-title">Masters Computer Science - UF, Gainesville</h3>
-                    <span>Aug 2023 - May 2025</span>
-                    <p class="line-text">Gaining depth on algorithms and operating systems <br> <b>GPA: 3.85/4</b></p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <img alt="" src="./assets/img/vssutLogo.png" class="responsive-img" width="15%" height="15%"/><br /> <br/>   
-                    <h3 class="line-title">Bachelors Computer Science - VSSUT, Burla</h3>
-                    <span>Jul 2016 - Jul 2020</span>
-                    <p class="line-text">Focused in various development activities by following best coding practices <br> <b>GPA: 3.62/4</b></p>
-                  </div>
-                </li>
-                
-              </ul>
+  <!-- ===== Contact ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="section-title">Let's build something <span class="grad-text">exceptional</span></h2>
+        <p class="section-sub">Whether it's a role, a collaboration or just a good engineering conversation — my inbox
+          is open.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="glass contact-panel" data-reveal="left">
+          <h3>Contact details</h3>
+          <p>The fastest way to reach me is email or LinkedIn. I usually reply within a day.</p>
+
+          <div class="contact-item">
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </span>
+            <div class="ci-text">
+              <small>Email</small>
+              <span>nishant.routray@gmail.com</span>
             </div>
+            <button class="copy-btn" data-copy="nishant.routray@gmail.com" type="button">Copy</button>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-briefcase"></i>
-                  <h2 class="timelin-title">Experience</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <img alt="" src="./assets/img/motorola.png" class="responsive-img" width="30%" height="30%"/><br /> <br/>   
-                    <h3 class="line-title">Software Developer (Agentic AI)</h3>
-                    <span>Chicago, Illinois (May 2024 - Present)</span>
-                    <p class="line-text">
-                      <b>Developed</b> Agentic AI Assistants for Enterprise Core Tech Team by utilizing AzureOpenAI to convert natural language queries into SQL and document analysis.<br/>
-                      <b>Employed</b> prompt engineering and few-shot learning with RAG for accurate query translation.<br/>
-                      <b>Executed</b> SQL queries on AWS Redshift and transformed results back to natural language using LLM.<br/>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <img alt="" src="./assets/img/csLogo.png" class="responsive-img" width="30%" height="30%"/><br /> <br/>   
-                    <h3 class="line-title">Software Developer</h3>
-                    <span>Pune, India (Aug 2020 - Jul 2023)</span>
-                    <p class="line-text"><b>Developed</b> Spring Boot microservices for regulatory reporting, handling 1M+ trades/day to downstream regulators like DTCC.  <br/>
-                      <b>Created</b> a React-based UI for real-time trade monitoring of all trades and with adavanced searching features.<br/>
-                      <b>Optimized</b> DB growth rate by implementing an archival component, saving 100K CHF. <br/>
-                      <b>Successfully</b> worked on Node.js, Express, and React-based live web app for process scheduling and control.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <img alt="" src="./assets/img/iitLogo.png" class="responsive-img" width="10%" height="10%"/><br /> <br/>   
-                    <h3 class="line-title">C++ Research Intern - IIT Kharagpur</h3>
-                    <span>May 2019 - July 2019</span>
-                    <p class="line-text">
-                      <b>Researching</b> on devising a novel architecture for Underwater Multimedia Acoustic Sensor Network to minimize latency and energy consumption by optimizing routing algorithms across different layers, enhancing communication efficiency between sea nodes.</p>
-                  </div>
-                </li>
-                
-              </ul>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/nishant-routray-081222111" target="_blank"
+            rel="noopener">
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z" />
+              </svg>
+            </span>
+            <div class="ci-text">
+              <small>LinkedIn</small>
+              <span>in/nishant-routray</span>
+            </div>
+          </a>
+
+          <a class="contact-item" href="https://github.com/nroutray" target="_blank" rel="noopener">
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+              </svg>
+            </span>
+            <div class="ci-text">
+              <small>GitHub</small>
+              <span>github.com/nroutray</span>
+            </div>
+          </a>
+
+          <div class="contact-item">
+            <span class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </span>
+            <div class="ci-text">
+              <small>Location</small>
+              <span>Redmond, Washington · USA</span>
             </div>
           </div>
         </div>
+
+        <div class="glass contact-panel" data-reveal="right">
+          <h3>Send a message</h3>
+          <p>Fill this in and it'll open your mail app with everything ready to send.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+                <span class="err">Please enter your name.</span>
+              </div>
+              <div class="field">
+                <input type="email" id="cf-email" name="email" placeholder="Your email" required>
+                <span class="err">Please enter a valid email address.</span>
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" id="cf-subject" name="subject" placeholder="Subject" required>
+              <span class="err">Please add a subject.</span>
+            </div>
+            <div class="field">
+              <textarea id="cf-message" name="message" placeholder="Tell me about it..." required></textarea>
+              <span class="err">Please write a message.</span>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send message
+            </button>
+            <div class="form-status" id="formStatus"></div>
+            <p class="form-note">Prefer email? Write to <a href="mailto:nishant.routray@gmail.com"
+                style="color:var(--a2)">nishant.routray@gmail.com</a></p>
+          </form>
+        </div>
+
       </div>
     </div>
-    <!-- Resume Section End -->
+  </section>
 
-    <!-- Projects Section Start -->
-    <!-- <section id="projects" class="section-padding">
-      <div class="container">
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Projects</h2>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="card project-card wow fadeInUp" data-wow-delay="0.2s">
-              <div class="card-body">
-                <h5 class="card-title">JARGO</h5>
-                <p class="card-text">Tech Jargon Translator: GenAI tool to simplify conversations chat space by giving automatically transalting complex messages to lucid statements.</p>
-                <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
-              </div>
-            </div>
-          </div>
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">NR</span>
+        <span>Nishant<span class="brand-dot">.</span></span>
+      </a>
 
-          <div class="col-md-4 col-sm-6">
-            <div class="card project-card wow fadeInUp" data-wow-delay="0.4s">
-              <img class="card-img-top" src="assets/img/projects/project2.jpg" alt="Project 2">
-              <div class="card-body">
-                <h5 class="card-title">Project Title 2</h5>
-                <p class="card-text">Brief description of Project 2.</p>
-                <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
-              </div>
-            </div>
-          </div>
+      <p>© <span id="year">2026</span> Nishant Routray · Designed &amp; built with <span class="heart">♥</span></p>
 
-          <div class="col-md-4 col-sm-6">
-            <div class="card project-card wow fadeInUp" data-wow-delay="0.6s">
-              <img class="card-img-top" src="assets/img/projects/project3.jpg" alt="Project 3">
-              <div class="card-body">
-                <h5 class="card-title">Project Title 3</h5>
-                <p class="card-text">Brief description of Project 3.</p>
-                <a href="https://github.com/yourusername/project3" class="btn btn-primary" target="_blank">View on GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Projects Section End -->
+      <ul class="socials">
+        <li><a href="https://github.com/nroutray" target="_blank" rel="noopener" data-net="github" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.9 2.9 1.3 3.6 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+            </svg>
+          </a></li>
+        <li><a href="https://www.linkedin.com/in/nishant-routray-081222111" target="_blank" rel="noopener"
+            data-net="linkedin" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.4v1.6h.1a3.8 3.8 0 0 1 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zm1.8 13H3.5V9h3.6v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 1 .8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7c0-1-.8-1.7-1.8-1.7z" />
+            </svg>
+          </a></li>
+        <li><a href="https://leetcode.com/nroutray/" target="_blank" rel="noopener" data-net="leetcode"
+            aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M13.5 1.2a1.4 1.4 0 0 1 2 2l-3.3 3.4 5.4 5.5a1.4 1.4 0 0 1-2 2l-5.4-5.5-3.5 3.6a3.6 3.6 0 0 0 0 5l3.5 3.5a3.5 3.5 0 0 0 5 0l1.9-2a1.4 1.4 0 0 1 2 2l-2 2a6.4 6.4 0 0 1-9 0l-3.4-3.6a6.4 6.4 0 0 1 0-9zM21 13.4h-8.3a1.4 1.4 0 0 1 0-2.8H21a1.4 1.4 0 1 1 0 2.8z" />
+            </svg>
+          </a></li>
+        <li><a href="https://www.instagram.com/_just.nish_/" target="_blank" rel="noopener" data-net="instagram"
+            aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none" />
+            </svg>
+          </a></li>
+        <li><a href="mailto:nishant.routray@gmail.com" data-net="mail" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a></li>
+      </ul>
+    </div>
+  </footer>
 
-    <section id="projects" class="section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Projects 🛠️</h2>
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>JARGO</h3>
-          <img alt="" src="./assets/img/langchain.png" width="10%" height="22%" />
+  <!-- ===== Back to top ===== -->
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+      stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5" />
+      <polyline points="5 12 12 5 19 12" />
+    </svg>
+  </button>
 
-          <p>Tech Jargon Translator: GenAI assistant to translate complex conversations into lucid statements</p>
-          <a href="https://github.com/nroutray/JARGO" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Data Redaction Pipeline</h3>
-          <img alt="" src="./assets/img/python.png" width="8%" height="18%" />
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <img id="lbImg" src="" alt="">
+    <button class="lb-btn lb-close" id="lbClose" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
 
-          <p>Conceal PII from incident records for public safety analysis</p>
-          <a href="https://github.com/nroutray/cis6930sp24-assignment0" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Library Management</h3>
-          <img alt="" src="./assets/img/java.png" width="10%" height="22%" />
+  <script src="assets/js/app.js"></script>
+</body>
 
-          <p>Book records management system using Red Black tree and Min Heap</p>
-          <a href="https://github.com/nroutray/gatorLibrary_ADS" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Human-Elephant Strife</h3>
-          <img alt="" src="./assets/img/python.png" width="8%" height="18%" />
-          <p>YOLO Object Detection Model to identify elephants and play buzzing sound to prevent encroaching</p>
-          <a href="https://github.com/nroutray/Jumbo" target="_blank">View on GitHub</a>
-        </div>
-        <!-- Add more project cards as needed -->
-      </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolios" class="section-padding">
-      <!-- Container Starts -->
-      <div class="container">        
-        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Some Beautiful Memories 💌</h2>
-        <div class="row">          
-          <div class="col-md-12">
-            <!-- Portfolio Controller/Buttons -->
-            <div class="controls text-center">
-              <a class="filter active btn btn-common" data-filter="all">
-                All 
-              </a>
-              <!-- <a class="filter btn btn-common" data-filter=".awards">
-                Awards 
-              </a> -->
-              <!-- <a class="filter btn btn-common" data-filter=".development">
-                Development
-              </a>
-              <a class="filter btn btn-common" data-filter=".print">
-                Print 
-              </a> -->
-            </div>
-            <!-- Portfolio Controller/Buttons Ends-->
-          </div>
-
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img class="galleryImgBorder" src="assets/img/gallery/img-3.jpg" alt="" />  
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <!-- <a class="link" href="#">
-                        <i class="icon-link"></i>
-                      </a> -->
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix awards">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img class="galleryImgBorder" src="assets/img/gallery/img-2.png" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-2.png">
-                        <i class="icon-eye"></i>
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix awards">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img class="galleryImgBorder" src="assets/img/gallery/img-1.jpg" alt=""/> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <!-- <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-4.jpg" alt="" /> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-5.jpg" alt="" /> 
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="assets/img/gallery/img-6.jpg" alt=""/>
-                  <div class="overlay">
-                    <div class="icons">
-                      <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
-                        <i class="icon-eye"></i>
-                      </a>
-                      <a class="link" href="#">
-                        <i class="icon-link"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>               
-              </div>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <!-- Container Ends -->
-    </section>
-    <!-- Portfolio Section Ends --> 
-
-    <!-- Counter Area Start-->
-    <!-- <section class="counter-section section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
-              <div class="icon"><i class="icon-briefcase"></i></div>
-              <div class="counterUp">3</div>
-              <p>Project Working</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
-              <div class="icon"><i class="icon-check"></i></div>
-              <div class="counterUp">20</div>
-              <p>Project Done</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
-              <div class="icon"><i class="icon-diamond"></i></div>
-              <div class="counterUp">5</div>
-              <p>Awards Received</p>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
-            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
-              <div class="icon"><i class="icon-heart"></i></div>
-              <div class="counterUp">10000</div>
-              <p>Lines of Code</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Counter Area End-->
-
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="contact-block">
-                <h2>Contact Form</h2>
-                <form id="contactForm">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button">
-                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
-                <h2>Contact Address</h2>
-                <div class="footer-right-contact">
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <p>Gainesville, FL</p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-
-                    <p><a href="mailto:nishant.routray@gmail.com"></a>nishant.routray@gmail.com</p>
-                  </div>
-                  <!-- <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <p></p>
-                  </div> -->
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12">
-            <!-- <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object> -->
-            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJJ25cFSaj6IgRUf48BHbS-DU&key=AIzaSyAAHJBf9eOAOr3uhuY90Zz-g7rIO4kfDgg"></object>
-          </div>
-          </div>
-        </div>
-      </div>   
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-              <ul class="social-icon">
-                <li>
-                  <a class="facebook" href="https://www.facebook.com/nishant.routray"><i class="icon-social-facebook"></i></a>
-                </li>
-                <!-- <li>
-                  <a class="twitter" href="https://twitter.com/NR7Returns"><i class="icon-social-twitter"></i></a>
-                </li> -->
-                <li>
-                  <a class="instagram" href="https://www.instagram.com/_just.nish_/"><i class="icon-social-instagram"></i></a>
-                </li>
-                <li>
-                  <a class="linkedin" href="https://in.linkedin.com/in/nishant-routray-081222111"><i class="icon-social-linkedin"></i></a>
-                </li>
-                <li>
-                  <a class="github" href="https://www.github.com/nroutray"><i class="icon-social-github"></i></a>
-                </li>
-              </ul>
-              <p>Copyright © 2025 Nishant's Portfolio</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Footer Section End -->
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
-    <script type="text/javascript">
-      (function(){
-        var words=["Software Developer","Competitive Coder","Generative AI","Fitness Enthusiast"],
-        i=0;
-        setInterval(function(){
-          $('#words').fadeOut(function(){
-            $(this).html(words[(i=(i+1) % words.length )]).fadeIn();
-          });
-        },1500)
-      })();
-    </script>  
-
-  </body>
 </html>
